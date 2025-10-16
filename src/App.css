@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg,#66a6ff 0%, #89f7fe 100%);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 350px;
+  margin: auto;
+  width: 500px;
+  min-height: 400px;
+  position: relative;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  margin: 0.1rem 0 0.5rem;
+}
+
+h2 {
+  margin: 0.1rem 0 1rem;
+}
+
+p {
+  text-align: left;
+  margin: 0.1rem 0;
+  color: #333;
+}
+
+.loading {
+  font-size: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.refresh-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #66a6ff ;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.refresh-button:hover {
+  background: #89f7fe;
+}
+
+.info-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.label {
+  color: #888;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.value {
+  font-weight: bold;
+  margin: 0;
+  color: #333;
 }
